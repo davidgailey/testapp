@@ -5,9 +5,9 @@ var http = require('http'),
      url = 'http://localhost:' + port + '/';
 /* We can access nodejitsu enviroment variables from process.env */
 /* Note: the SUBDOMAIN variable will always be defined for a nodejitsu app */
-if(process.env.SUBDOMAIN){
+//if(process.env.SUBDOMAIN){
   //url = 'http://' + process.env.SUBDOMAIN + '.jit.su/';
-}
+//}
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
